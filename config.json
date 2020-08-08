@@ -1,0 +1,5 @@
+{
+    "yggdrasil_url" : "authserver.mojang.com",
+    "server_port" : 1234,
+    "get_resp" : "MOJANG AUTHSERVER MIRROR"
+}
