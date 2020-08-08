@@ -5,7 +5,7 @@ It, however, currently only supports http requests.
 ## Configuration
 Below is the config.json file.
 
-```json
+```
 {
     "yggdrasil_url" : Server to mirror to (default: authserver.mojang.com),
     "server_port" : Port to serve POST server on (default: 1234),
