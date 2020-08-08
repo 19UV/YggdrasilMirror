@@ -4,7 +4,7 @@
   "description": "A mirror to Mojang Authentication server, which is CORS friendly",
   "main": "index.js",
   "scripts": {
-    "main": "node index.js && exit 0"
+    "start": "node index.js && exit 0"
   },
   "author": "19UV",
   "license": "ISC"
