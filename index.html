@@ -1,4 +1,5 @@
 <script>
+const yggdrasil_url = "yggdrasilmirror.19uv.repl.co:80";
 window.addEventListener("load", init);
 function init() {
     let username = prompt("Username");
@@ -19,7 +20,7 @@ function init() {
             console.log(obj);
         }
     };
-    xhttp.open("POST", "http://127.0.0.1:1234/authenticate", true);
+    xhttp.open("POST", "http://" + yggdrasil_url + "/authenticate", true);
     xhttp.send(params);
 }
 </script>
