@@ -4,10 +4,8 @@ const https = require('https');
 
 // Defaults, in case file read results in an error
 let yggdrasil_url = "authserver.mojang.com";
-let server_port = process.env.PORT || 1234;
+let server_port = 1234;
 let get_resp = "TEST";
-
-console.log("RECOMENDED PORT:",process.env.PORT);
 
 fs.readFile("config.json", "utf-8", (err, data) => {
     if (err) {
@@ -19,7 +17,7 @@ fs.readFile("config.json", "utf-8", (err, data) => {
     let prst = JSON.parse(data);
     
     yggdrasil_url = prst.yggdrasil_url;
-    server_port = prst.server_port;
+    server_port = process.env.PORT || prst.server_port;
     get_resp = prst.get_resp;
     
     console.log("Server Listening on Port: " + server_port);
