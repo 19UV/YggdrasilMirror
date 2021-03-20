@@ -1,10 +1,19 @@
 {
   "name": "nodeyggdrasilmirror",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A mirror to Mojang Authentication server, which is CORS friendly",
   "main": "index.js",
   "scripts": {
     "start": "node index.js && exit 0"
+  },
+  "keywords": [
+    "minecraft",
+	"heroku",
+	"mirror",
+	"yggdrasil"
+  ],
+  "engines": {
+    "node": "14.x"
   },
   "author": "19UV",
   "license": "ISC"
